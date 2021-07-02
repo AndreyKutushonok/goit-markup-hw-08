@@ -1,0 +1,118 @@
+.menu{
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(-100%);
+    padding-left: 40px;
+    padding-bottom: 48px;
+    transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        max-width: 450px;
+        position: relative;
+    }
+    
+}
+.menu.is-open{
+    transform: translateY(0);
+}
+.menu-close{
+    position: absolute;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    
+}
+.menu-close__icon{
+    fill: #000;
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .menu-close:hover &,
+    .menu-close:focus &{
+        fill:var(--blue);
+    }
+}
+.menu-nav{
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    margin: 0;
+    margin-top: 48px;
+}
+.menu-nav__item{
+    margin-bottom: 22px;
+}
+.menu-nav__link{
+    &:hover,
+    &:focus{
+        color:var(--blue);
+    }
+}
+.menu-nav__link--current{
+    color:var(--blue);
+}
+.menu-contacts{
+    margin-bottom: 44px;
+}
+.menu-contacts__phone{
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: var(--blue);
+    margin-bottom: 22px;
+}
+.menu-contacts__mail{
+    font-size: 19px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: var(--gray);
+}
+.menu-socials{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--blue);
+}
+.menu-socials__item{
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+}
+.menu-socials__item--indent{
+    margin-left: 10px;
+}
+@media screen and(min-width:480px) {
+    .menu-nav{
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .menu-nav__item{
+        margin-bottom: 32px;
+    }
+    .menu-contacts{
+        margin-bottom: 64px;
+    }
+    .menu-contacts__phone{
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+    .menu-contacts__mail{
+        font-size: 24px;
+        line-height: 28px;
+    }
+}

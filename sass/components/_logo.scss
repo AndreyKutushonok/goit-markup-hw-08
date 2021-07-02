@@ -1,0 +1,25 @@
+.logo{
+    color:var(--blue);
+    font-family: var(--logo-font);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    &__header{
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    }
+    &__black{
+        color:var(--black);
+    }
+    &__white{
+        color:var(--white);
+    }
+}
+@media screen and(min-width:1199px) {
+    .logo{
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
+}

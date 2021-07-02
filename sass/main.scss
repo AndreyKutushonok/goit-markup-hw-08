@@ -1,0 +1,26 @@
+@import './vendor/modern-normalize';
+
+@import './utils/variables';
+@import './utils/visualy-hiden';
+
+@import './base/common';
+@import './base/container';
+
+@import './layout/header';
+@import './layout/footer';
+@import './components/logo';
+// studio
+@import './layout/hero';
+@import './layout/our-features';
+@import './layout/what-we-do';
+@import './layout/our-team';
+@import './layout/clients';
+// // portfolio
+@import './layout/filter';
+@import './layout/projects';
+// // Modal-window
+@import './components/modal-window';
+@import './components/modal-form';
+@import './components/submit-button';
+// Mobile-menu
+@import './components/mobile-menu';

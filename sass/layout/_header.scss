@@ -1,0 +1,155 @@
+.header{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #EEEEEE;
+
+    .container{
+        display: flex;  
+        align-items:center;
+        position: relative;
+    }
+
+    .contacts{
+        color:var(--gray);
+        margin-right: 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    }
+} 
+.header .navigation{
+    margin-left: 88px;
+}
+.navigation__list{
+    display: flex;
+    width: 294px;
+    justify-content: space-between;
+    height: 80px;
+    padding-top: 32px;
+}
+.navigation__link--current{
+    position: relative;
+
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: var(--blue);
+        border: 2px solid var(--blue);
+        border-radius: 2px;
+        margin-top: 29px;
+    }
+}
+.m-t{
+    display: flex;
+    align-items: center;
+    margin-left: 84px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+}
+.m-t__mail{
+    width: 14px;
+    height: 10px;
+}
+.m-t__phone{
+    width: 10px;
+    height: 14px;
+}
+.m-t--indent{
+    margin-bottom: 10px;
+}
+.m-t__icon{
+    fill: var(--gray);
+    margin-right: 10px;
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+    
+    &:hover,
+    &:focus{
+        fill: var(--blue);
+    }
+}
+.m-t{
+    &:hover .m-t__icon,
+    &:focus .m-t__icon{
+        fill: var(--blue);
+    }
+}
+.navigation__link--current{
+        color:var(--blue);
+}
+.navigation__link{
+    &:hover,
+    &:focus{
+        color:var(--blue);
+    }
+}
+.contacts__link{
+    &:hover,
+    &:focus {
+        color:var(--blue);
+    }
+}
+
+.menu-open{
+    position: absolute;
+    top:22px;
+    right: 23px;
+    background-color: transparent;
+    border: none;
+}
+.menu-icon{
+    display: block;
+    fill: #000000;
+    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+.menu-icon{
+    &:hover,
+    &:focus {
+        fill:var(--blue);
+    }
+
+}
+@media screen and(min-width:0) and(max-width:767px) {
+    .header .navigation,
+    .contacts,
+    .m-t{
+        display: none;
+    }
+}
+@media screen and(min-width:768px) {
+    .menu-open{
+        display: none;
+    }
+}
+@media screen and(min-width:1200px){
+    .header .navigation{
+        margin-left: 93px;
+    }
+    .contacts{
+        display: flex;
+        justify-content: space-between;
+    }
+    .m-t{
+        margin-left: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    }
+    .m-t__mail{
+        width: 16px;
+        height: 12px;
+    }
+    .m-t__phone{
+        width: 10px;
+        height: 16px;
+    }
+    .m-t--indent{
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+}
