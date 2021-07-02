@@ -748,7 +748,7 @@ source {
   background-color: #C4C4C4;
   text-align: center;
   max-width: 480px;
-  background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("/images/mobile/hero-m.jpg");
+  background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("../images/mobile/hero-m.jpg");
   background-repeat: no-repeat;
   margin-right: auto;
   margin-left: auto;
@@ -758,31 +758,31 @@ source {
 
 @media (min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .hero-section {
-    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("/images/mobile/hero-m-x2.jpg");
+    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("../images/mobile/hero-m-x2.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("/images/tablet/hero-t.jpg");
+    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("../images/tablet/hero-t.jpg");
   }
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("/images/tablet/hero-t-x2.jpg");
+    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("../images/tablet/hero-t-x2.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("/images/hero-back.jpg");
+    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("../images/hero-back.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("/images/hero-back-x2.jpg");
+    background-image: linear-gradient(var(--background-img-overlay), var(--background-img-overlay)), url("../images/hero-back-x2.jpg");
   }
 }
 
